@@ -57,7 +57,7 @@ describe('manageFriends', () => {
     });
   });
 
-  
+
 
   it("adheres to the rules of being a pure function, by not changing the original state, and instead returning a new object", () =>{
     let state = {
