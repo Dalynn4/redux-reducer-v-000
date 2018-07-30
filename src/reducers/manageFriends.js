@@ -1,7 +1,8 @@
 export function manageFriends(state, action){
   switch (action.type) {
     case 'ADD_FRIEND':
-      return {friends: state.friends.push(action.friend)}
+    let newfriends = state.friends.push(action.friend)
+      return {friends: newfriends}
     case 'REMOVE_FRIEND':
     return {}
     default:
